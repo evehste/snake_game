@@ -24,8 +24,10 @@ let food ={
     y: Math.floor(Math.random() * 15 + 1) * box
 }
 
+
+
 function criarBG(){
-    context.fillStyle = "black";
+    context.fillStyle = "#000";
     context.fillRect(0, 0, 16 * box, 16 * box); //desenha o retângulo usando x e y e a largura e altura setadas
 }
 

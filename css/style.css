@@ -1,54 +1,80 @@
+*{
+    font-family: 'Coda Caption', sans-serif;
+}
+
 body{
-    height: 95vh;
-    width: 95vw;
+    background-color: rgb(25, 34, 65);
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.titlePage{
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(25, 34, 65);
+    width: 100%;
+    height: 4rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
 }
 
-.header{
-    display: flex;
-    justify-content: space-around;
-    width: 512px;
+.titlePage .titlePage__img{
+    height: 100%;
 }
 
-.header .header__text {
+.titlePage .titlePage__text{
+    padding: 1rem;
     color: #fff;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 0.6rem;
-}
-
-.header .header__text > span{
-    font-weight: normal;
+    font-size: 2.3rem;
 }
 
 .container{
     display: flex;
     align-items: center;
-}
-
-.container .canvas{
-    border: 2px solid rgb(152, 152, 152);
-}
-
-.container .controls{
-    display: flex;
+    justify-content: center;
     flex-direction: column;
+    width: 560px;
+    background-color: #101831;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
 }
 
-.controls .controls__control{
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    margin: 1rem;
-    color: rgb(4, 38, 17);
-    background-color: green;
-    border: none;
-}
-.controls .controls__control:hover{
-    background-color: rgb(1, 113, 1);
-    cursor: pointer;
+.itens{
+    display: flex;
+    height: 2rem;
+    width: calc(100% - 60px);
+    padding: 0.4rem;
+    justify-content: space-between;
 }
 
+
+.score{
+    display: flex;
+    align-items: flex-end;
+    width: 30%;
+}
+
+.score .score__icon{
+    height: 86%;
+}
+
+.score .score__text{
+    color: #fff;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    font-size: 1.5rem;
+}
+
+
+
+.controls{
+    display: flex;
+    align-items: flex-end;
+}
+
+.controls .controls__button{
+    background: transparent;
+    border: navajowhite;
+    color: #fff;
+}

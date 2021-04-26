@@ -7,22 +7,39 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Snake Game</title>
+    <link rel="shortcut icon" href="./imgs/snake.ico" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
     <audio id="sound-up"><source  src="" type="audio/wav"></audio>
-   
-    <header class="header">
-        <p class="header__text">Score: <span id="score">0</span> </p>
-        <p class="header__text">Record: <span id="scoreRecord">0</span> </p>
+
+    <header class="titlePage">
+        <img class="titlePage__img" src="./imgs/snake.png" alt="">
+        <h1 class="titlePage__text">Snake Game</h1>
     </header>
+   
+   
 
 
     <section class="container">
-        <canvas class="canvas" id="snake" width="512" height="512"></canvas>
-        <div class="controls">
-            <button class="controls__control">Start</button>
-            <button class="controls__control">Restart</button>
+        <div class="itens">
+            <div class="score">
+               <img class="score__icon" src="./imgs/apple.png" alt="">
+                <span class="score__text" id="score">0</span>
+                <img class="score__icon" src="./imgs/trofeu.png" alt="">
+                <span class="score__text"  id="scoreRecord">0</span>
+            </div>
+
+            <div class="controls">
+                <button class="controls__button">o</button> <!-- reiniciar -->
+                <button class="controls__button">o</button> <!-- volume -->
+            </div>
+
         </div>
+
+        <canvas class="canvas" id="snake" width="512" height="512"></canvas>
+
     </section>
 
     
